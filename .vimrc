@@ -1,4 +1,3 @@
-
 " Basics {
     set nocompatible "explicitly get out of vi-compatible mode
     set noexrc "don't use local version of .(g)vimrc, .exrc
@@ -37,8 +36,8 @@
     set autoindent
     set smartindent
 
-    set tabstop=4
-    set shiftwidth=4
+    set tabstop=2
+    set shiftwidth=2
     set expandtab
 
     set ignorecase
