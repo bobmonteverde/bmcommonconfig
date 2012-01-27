@@ -40,12 +40,6 @@
 " }
 
 
-" User Settings {
-
-  set g:github_user bobmonteverde
-
-" }
-
 
 " Key Bindings {
 
