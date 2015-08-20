@@ -15,9 +15,12 @@
 
     " LANGUAGE SUPPORT:
     " Bundle: jade.vim
+    " Bundle: digitaltoad/vim-jade
     " Bundle: wavded/vim-stylus
     " Bundle: tpope/vim-markdown
+    " Bundle: tpope/vim-haml
     " Bundle: pangloss/vim-javascript
+    " Bundle: leafgarland/typescript-vim
 
     " VERSION CONTROL
     " Bundle: tpope/vim-fugitive
@@ -27,10 +30,8 @@
     " Bundle: The-NERD-tree
 
     " BUFFER SWITCHING
-    " Bundle: TabBar
+    " Bundle: fholgado/minibufexpl.vim
 
-
-    " Bundle: Tagbar
 
     " Bundle: tpope/vim-repeat
     " Bundle: tpope/vim-surround
@@ -156,3 +157,13 @@
 " }
 
 
+" automatically remove trailing whitespace on save to some filetypes {
+    function! <SID>StripTrailingWhitespaces()
+        let l = line(".")
+        let c = col(".")
+        %s/\s\+$//e
+        call cursor(l, c)
+    endfun
+
+    autocmd BufWritePre *.css,*.scss,*.js,*.json,*.html :call <SID>StripTrailingWhitespaces()
+" }
