@@ -137,6 +137,10 @@
     "Save and restore session
     map <F2> :mksession! ~/vim_session <cr> " Quick write session with F2
     map <F3> :source ~/vim_session <cr>     " And load session with F3
+
+    " Providers
+    let g:python_host_prog = '/usr/bin/python'
+    let g:python3_host_prog = '/usr/local/bin/python3'
 " }
 
 
@@ -212,10 +216,6 @@
     " let g:UltiSnipsExpandTrigger='<tab>'
     " let g:UltiSnipsJumpForwardTrigger='<c-b>'
     " let g:UltiSnipsJumpBackwardTrigger='<c-z>'
-" }
-
-" jsx {
-    let g:jsx_ext_required = 0
 " }
 
 " neoyank {
